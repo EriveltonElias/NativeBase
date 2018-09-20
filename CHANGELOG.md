@@ -1,24 +1,23 @@
-
-# Version [2.0.5](https://github.com/GeekyAnts/NativeBase/releases/tag/v2.0.4)
-
-### New Features
-
--	**Button:** Supports ripple for Android.
--	**Layout:** New components `<Left />`, `<Right />` and `<Body />` for easier layout-ing.
--	**Material Design:** Material design for both iOS and android, _if_ you want that.
--	**Common Color:** Follows respective design guidelines but with a common color scheme.
--	**Form Components:** New `Item` component with _floating label_ support. Docs [here](http://nativebase.io/docs/v2.0.0/components#form).
--	**Theming:** New `Styleprovider` component which you lets you contextually style your app (or parts of it).
+# Version [2.8.0](https://github.com/GeekyAnts/NativeBase/releases/tag/v2.8.0)
 
 
+### General Features
 
-### Enhancement Features 
-
--	**Design Guidelines:** Follows respective design guidelines to the T.
--	**Icons:** Platform specific icons. Mapped to `ios` and `android`. [Check mapping](https://github.com/GeekyAnts/NativeBase/blob/master/src/basic/Icon/NBIcons.json).
--	**Form Components:** Improved components with more customizability and easier use cases. Docs [here](http://nativebase.io/docs/v2.0.0/components#form).
+*   **lodash:** Upgraded lodash to 4.17.10 to fix vulnerability issue. Commit [dc9ac11](https://github.com/GeekyAnts/NativeBase/commit/dc9ac1131432ba1cac21f900a61f31af848b68ea), closes [#2118](https://github.com/GeekyAnts/NativeBase/issues/2118)
 
 
-### Breaking Changes
+### Upgraded Features
 
--	**Gravatar:** Thumbnail like feature which pulls out avatar of user if registered globally ([659548f](https://github.com/GeekyAnts/NativeBase/commit/659548f5357aa762ffcedf555f4736b61be18320))
+*   **Drawer:** Added back Drawer. PR [#2243](https://github.com/GeekyAnts/NativeBase/pull/2243)
+*   **Form:** Added `disabled` prop with TextArea. Commit [c3d9d72](https://github.com/GeekyAnts/NativeBase/commit/c3d9d72318f14181a1ecab68c7cd9cd13d14529c)
+
+
+
+### Bug Fixes
+
+*   **Form:**
+    -   Fixed floatingLabel input label cuts on Android Plus devices. PR [#2149](https://github.com/GeekyAnts/NativeBase/pull/2149), closes [#2117](https://github.com/GeekyAnts/NativeBase/issues/2117)
+    -   Fixed modifying the assertion on the Item component to use displayName prop. PR [#2001](https://github.com/GeekyAnts/NativeBase/pull/2001), closes [#2011](https://github.com/GeekyAnts/NativeBase/issues/2011)
+*   **Gravatar:** Added missing import `prop-types` package. PR [#2175](https://github.com/GeekyAnts/NativeBase/pull/2175)
+*   **Header:** Fixed Icon size for Left and Right component of Header. Commit [c232bb6](https://github.com/GeekyAnts/NativeBase/commit/c232bb69c7071c3e194480f83f16bc219e5dd030), closes [#2205](https://github.com/GeekyAnts/NativeBase/issues/2205)
+*   **ListItem:** Fixed Left component alignment for ListItem avatar when the content in Body is in multiple lines. Commit [007fabb](https://github.com/GeekyAnts/NativeBase/commit/007fabb3a3cd44a44d9553b0b78f40140aabd4bb), closes [#2226](https://github.com/GeekyAnts/NativeBase/issues/2226)

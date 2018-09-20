@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { TouchableOpacity, View } from "react-native";
 
 import { connectStyle } from "native-base-shoutem-theme";
-import mapPropsToStyleNames from "../Utils/mapPropsToStyleNames";
+import mapPropsToStyleNames from "../utils/mapPropsToStyleNames";
 
 class CardItem extends Component {
 	render() {
@@ -11,8 +11,8 @@ class CardItem extends Component {
 			return (
 				<TouchableOpacity
 					ref={c => (this._root = c)}
+					activeOpacity={0.2}
 					{...this.props}
-					activeOpacity={this.props.button ? 0.2 : 1}
 				>
 					{this.props.children}
 				</TouchableOpacity>
